@@ -8,7 +8,7 @@ from wtforms.validators import DataRequired
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/sensor'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/appdb'
 app.config.update(dict(
     SECRET_KEY="powerful secretkey",
     WTF_CSRF_SECRET_KEY="a csrf secret key"
